@@ -1,0 +1,398 @@
+<!-------------------------
+    Landing Page HTML API
+--------------------------->
+
+<!DOCTYPE Html>
+
+<html>
+
+<!-- Header contents -->
+
+<head>
+
+    <title>Landing Page - 1 4 All Computers</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/Landing Page.css" type="text/css">
+
+    <script type="text/javascript" src="javascript/Landing page.js"></script>
+
+</head>
+
+<!-------------------
+        Body contents
+    -------------------->
+
+<body class="colormove">
+
+    <br>
+
+    <!-- Navigation Menu -->
+
+    <div class="nav" id="mainNav">
+
+        <ul class="nav nav-fill">
+
+            <li class="nav-item">
+
+                <a href="#" class="nav-link">Home</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <div class="dropdown show">
+
+                    <a class="nav-link dropdown-toggle" href="1 - Catalogue Page.html" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catalogue
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                        <a class="dropdown-item" href="1 - Catalogue Page.html#graphicsCard">Graphics Cards</a>
+                        <a class="dropdown-item" href="1 - Catalogue Page.html#motherboard">Motherboards</a>
+                        <a class="dropdown-item" href="1 - Catalogue Page.html#CPU">CPU / Processors</a>
+                        <a class="dropdown-item" href="1 - Catalogue Page.html#RAM">RAM</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="3 - Shopping Cart.html">Shopping Cart</a>
+
+            </li>
+
+
+            <li>
+
+                <a href="2 - About Us.html" class="nav-link">About Us</a>
+
+            </li>
+
+
+            <li>
+
+                <a href="#" class="nav-link">Contact Us</a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <br>
+
+    <!-- ---------------
+            MainPage Image 
+        -------------------->
+
+    <img src="Images/Mainpage Header.png" class="img-fluid">
+
+    <br>
+
+    <br>
+
+    <!-------------------
+            Body Contents
+        -------------------->
+
+    <div class="container">
+
+        <!--Welcome Message-->
+
+        <h6 class="lead" id="welcomeMess">Welcome to One For All Components, your one stop shop for Components!</h6>
+
+        <br>
+
+        <h5 class="lead">What's New in Components?&nbsp;</h5>
+
+        <br>
+
+
+        <!-- News info text -->
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <dl>
+                    <dt>Intel Rocket Lake - The newest from intel.</dt>
+                    <br>
+                    <dd>Intel confirmed in 2021 that they will be blessing our computers with it's 11th Gen Rocket
+                        Lake
+                        processor, with PCIe 4.0 support on motherboards.</dd><br>
+                    <dd>This just in time to compete with AMD's next-gen Zen 3 architecture processors. Get all the
+                        details <a
+                            href="https://www.tomshardware.com/news/intel-rocket-lake-release-date-specifications-performance-all-we-know">here</a>
+                    </dd>
+                </dl>
+
+            </div>
+
+            <div class="col-6">
+
+                <dl>
+                    <dt>Nividia is removing these drivers for old GPU's.</dt><br>
+                    <dd>As all things, the best has come to it's end. This was confirmed on 23 May 2021 by Nividia
+                        that
+                        they will stop pushing updates for the GTX600 and 700 series GPU's.</dd><br>
+                    <dd>"The incoming R470 graphics driver will be the last to support some of the firm's older
+                        graphics
+                        cards", said Darren Allan from techradar.com. Read all about it <a
+                            href="https://www.techradar.com/news/nvidia-is-preparing-these-older-gpus-for-the-driver-chopping-block">here</a>
+                    </dd>
+                </dl>
+
+            </div>
+
+        </div>
+
+        <br>
+
+
+        <!---------------------
+                Catalogue Preview 
+            ----------------------->
+
+        <h6 class="lead">Catalogue - Components</h6>
+
+
+        <div class="card">
+
+            <div class="row row-cols-1 row-cols-md-2 no-gutters">
+
+                <!-- Graphics Card preview -->
+
+                <div class="col">
+
+                    <div class="card">
+
+                        <img src="Images/mainpage GPU.png" class="card-img-top img-fluid" id="mainPagefirst">
+
+                        <div class="card-body">
+
+                            <h6 class="card-title">Graphics Cards</h6>
+
+                            <p class="card-text">Gamer's primary component used to play games. The more
+                                computational
+                                cores, the faster games can be rendered (loaded).</p>
+                            <a href="1 - Catalogue Page.html" class="btn btn-primary">Show More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CPU / processors preview -->
+
+                <div class="col">
+
+                    <div class="card">
+
+                        <img src="Images/mainpage CPU.png" class="card-img-top img-fluid" id="mainPageSecond">
+
+                        <div class="card-body">
+
+                            <h6 class="card-title">CPU / Processors</h6>
+
+                            <p class="card-text">The processor handles all the basic system instructions, the more
+                                cores
+                                - the faster processing times.</p>
+
+                            <a href="1 - Catalogue Page.html" class="btn btn-primary">Show More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+
+        <!---------------------
+                Customer reviews
+             --------------------->
+
+        <h5 class="lead">What our Customers Say </h5>
+
+        <br>
+
+        <div class="row">
+
+
+            <!-- Review #1 -->
+
+            <div class="col-6">
+
+                <dl>
+
+                    <figure class="text-center">
+
+                        <blockquote class="blockquote">
+                            <p><em>"My daugther had an upcoming birthday in the middle of the month and wanted a new
+                                    graphics card, All for one assisted me with picking the right card for an
+                                    affordable
+                                    price."</em></p>
+                        </blockquote>
+
+                        <figcaption class="blockquote-footer" style="color: white;">
+                            Rudi Barnard <cite title="Source Title">Pretoria</cite>
+                        </figcaption>
+
+                    </figure>
+
+                </dl>
+
+            </div>
+
+
+            <!-- Review #2 -->
+
+            <div class="col-6">
+
+                <dl>
+
+                    <figure class="text-center">
+
+                        <blockquote class="blockquote">
+                            <p><em>"As a student I do not have a lot of funds for my gaming gear, but All for One
+                                    made
+                                    no empty promises and delivered with excellent service!"</em></p>
+                        </blockquote>
+
+                        <figcaption class="blockquote-footer" style="color: white;">
+                            Armandt Moolman<cite title="Source Title"> Cape Town</cite>
+                        </figcaption>
+
+                    </figure>
+
+                </dl>
+
+            </div>
+
+        </div>
+
+        <br>
+
+
+        <!-----------------
+                Contact Form
+            ------------------>
+
+        <h5 class="lead">Any Suggestions? Leave a message.</h5>
+
+        <br>
+
+        <div class="form-group rounded">
+
+
+            <!--Client Details-->
+
+            <div class="row">
+
+
+                <!-- Email address -->
+
+                <div class="col">
+
+                    <label for="inputEmail"><b>Email address</b></label><br>
+                    <input type="email" class="form-group" id="inputEmail" placeholder="Enter Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+
+                </div>
+
+                <!-- Cellphone number -->
+
+                <div class="col">
+
+                    <label for="inputCell"><b>Cellphone Nr.</b></label><br>
+                    <input type="tel" class="form-group" id="inputCell" placeholder="Enter Cellphone">
+
+                </div>
+
+            </div>
+
+            <br>
+
+
+            <!-- Contact Form Questionnaire -->
+
+            <div class="row">
+
+                <div class="col" id="radio">
+
+                    <label for="radioQuery">Query Type :</label><br>
+                    <input type="radio" id="Query" name="Query Relation" value="Advice">
+                    <label for="Query">Advice</label><br>
+                    <input type="radio" id="Price" name="Query Relation" value="Price">
+                    <label for="Query">Price</label><br>
+                    <input type="radio" id="other" name="Query Relation" value="other">
+                    <label for="other">Other</label>
+
+                </div>
+
+            </div>
+
+
+            <br>
+
+
+            <!-- Contact Form Comment -->
+
+            <div class="row justify-content-center">
+
+                <div class="col">
+
+                    <label for="exampleFormControlTextarea1">Comment</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                </div>
+
+            </div>
+
+            <br>
+
+
+            <!-- Contact Form Submit Button -->
+
+            <div class="row justify-content-center">
+
+                <div class="col">
+
+                    <input type="submit" class="form-group" id="submitBtn">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        
+        <!--Back to Top Button-->
+
+        <a href="#mainNav" class="btn">Back to Top</a>
+
+    </div>
+
+
+</body>
+
+</html>

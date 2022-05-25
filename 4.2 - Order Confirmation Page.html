@@ -1,0 +1,248 @@
+<!-----------------------------------
+    OrderConfirmation HTML page API 
+------------------------------------->
+
+<DOCTYPE html>
+
+    <html>
+
+    <head>
+
+        <!-------------------------------
+            Head contents of catalogue
+        --------------------------------->
+
+        <title>OrderConfirm</title>
+
+        <meta charset="UTF-8">
+
+        <!-------------------------------
+            Reference to stylesheets
+        --------------------------------->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="CSS/Order Confirmation Page.css" type="text/css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="javascript/Order Confirmation Page.js"></script>
+
+    </head>
+
+    <!-------------------------------
+        Header contents of catalogue
+    --------------------------------->
+
+    <header>
+
+        <!-------------------------------
+        Navigation Menu Contents
+    --------------------------------->
+
+        <div class="nav" id="mainNav">
+
+            <ul class="nav nav-fill">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="0 - Landing Page.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="1 - Catalogue Page.html">Catalogue</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#3 - Shopping Cart.html">Shopping Cart</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="2 - About Us.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+
+    <!-------------------------------
+          Body contents of Page
+    -------------------------------->
+
+    <body class="colormove">
+
+
+        <!-- Heading of body Contents -->
+
+        <h3 id="mainHead">Checkout Page</h3>
+
+        <br>
+
+
+        <!-- Navigation Menu of body Contents -->
+
+        <div class="card text-center">
+
+            <div class="card-header">
+
+                <ul class="nav nav-tabs card-header-tabs">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled" id="deliveryNav">Delivery Options</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-current="true" href="#" id="paymentNav">Payment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="orderConfirmNav">Order Confirmation</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+
+        <!-- Content Div container -->
+
+        <div class="orderConfirmation">
+
+
+            <div class="row card text-center">
+
+
+                <div class="card-header">
+
+                    <h4>Your order has been placed</h4>
+
+                </div>
+
+
+                <!-- Order contents of buyer -->
+
+                <div class="card-body">
+
+
+                    <!-- Table contents -->
+
+                    <table class="table table-striped" id='table'>
+
+
+
+                        <tr>
+
+                            <td><span id="invoiceNum" class="col-12" style="color: white;font-size: 20px;"></span><br>
+                            </td>
+
+                            <td><a href="#" class="col-5 offset-2" style="color: white;font-size: 20px;"><i
+                                        class="fa fa-file"></i>&nbsp;View invoice</a></td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>Description : </td>
+                            <td>Amount (R)</td>
+
+                        </tr>
+
+
+
+
+                        <!-- Buyer order table contents -->
+
+                        <tbody style="color: white;" id='tb' class="col-12">
+                        </tbody>
+
+
+
+                        <!-- Extra space for readability -->
+
+                        <tr>
+
+                            <td style="visibility: hidden;">123</td>
+
+                        </tr>
+
+
+                        <!-- Amounts paid breakdown -->
+
+                        <div class="userAmounts">
+
+                            <tr>
+                                <td>Total (exc VAT)</td>
+                                <td id="amountX"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Delivery Charge</td>
+                                <td id="deliveryCharge"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Dicount Coupon Redeemed</td>
+                                <td id="coupon"></td>
+                            </tr>
+
+                            <tr>
+                                <td>New Total (exc VAT)</td>
+                                <td id="couponX"></td>
+                            </tr>
+
+                            <tr>
+                                <td>New Total (incl VAT)</td>
+                                <td id="amountVat"></td>
+                            </tr>
+
+                        </div>
+
+
+
+                        <!-- Extra space for readability -->
+
+                        <tr>
+
+                            <td style="visibility: hidden;">New</td>
+                            <td style="visibility: hidden;">12</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <hr>
+
+                <!-- Thank You message and return button -->
+
+                <h4 style="color: white;">Thank Your for shopping With us!</h4>
+                <br>
+                <button class="btn" style="color: black;"><a href="0 - Landing Page.html">Return to home page</button>
+                <br>
+
+            </div>
+
+        </div>
+
+    </body>
+
+    </html>

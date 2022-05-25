@@ -1,0 +1,1820 @@
+<!------------------------------
+===============================
+    Catalogue HTML page API 
+===============================
+-------------------------------->
+
+<DOCTYPE Html>
+
+    <html>
+
+    <!-------------------------------
+        Head contents of catalogue
+    --------------------------------->
+
+    <head>
+
+        <title>Catalogue</title>
+
+        <meta charset="UTF-8">
+
+
+        <!-----------------------------
+            Reference to stylesheets
+        ------------------------------->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="CSS/catalogue.css" type="text/css">
+
+        <script type="text/javascript" src="Javascript/CataloguePage.js"></script>
+
+
+    </head>
+
+
+    <header>
+
+        <!-----------------------------
+            Navigation Menu Contents
+        ------------------------------->
+
+        <div class="nav" id="mainNav">
+
+            <ul class="nav nav-fill">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="0 - Landing Page.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+
+                    <div class="dropdown show">
+
+                        <a class="nav-link active dropdown-toggle" href="#Catalogue" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Catalogue
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    
+                          <a class="dropdown-item" href="1 - Catalogue Page.html#graphicsCard">Graphics Cards</a>
+                          <a class="dropdown-item" href="1 - Catalogue Page.html#motherboard">Motherboards</a>
+                          <a class="dropdown-item" href="1 - Catalogue Page.html#CPU">CPU / Processors</a>
+                          <a class="dropdown-item" href="1 - Catalogue Page.html#RAM">RAM</a>
+    
+                        </div>
+    
+                      </div>
+
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="3 - Shopping Cart.html">Shopping Cart</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="2 - About Us.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+
+    <!-------------------------------
+        Body contents of Catalogue
+    -------------------------------->
+
+    <body class="colormove" onload="gpuIDAssign(); mtbIDAssign(); cpuIDAssign(); ramIDAssign()">
+
+
+        <!-------------------------------
+            Header Image of Catalogue
+        -------------------------------->
+
+        <img src="Images/mainCat.png" id="cardboard-boxes" alt="cardboard-boxes" class="img-thumbnail w-100 h-75">
+
+        <br>
+
+        <br>
+
+        <h4 class="lead">Components Available</h4>
+
+        <br>
+
+
+
+        <!-------------------------------------
+            Graphics Cards Catalogue Contents
+        --------------------------------------->
+
+        <div class="card">
+
+            <div class="card-body">
+
+
+                <!--Graphics Card Heading contents-->
+
+                <div class="subHeadings">
+
+                    <div class="card">
+
+                        <div class="card-body" id="graphicsCard">
+
+                            <div class="row justify-content-md-center">
+
+                                <div class="col-md-6 offset-1">
+
+                                    <h4>Graphics Cards</h4>
+
+                                </div>
+
+                                <div class="col-md-3 offset-md-2">
+
+                                    <a href="3 - Shopping Cart.html" class="viewCart"><b>View Cart</b></a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+
+
+                <div class="container-fluid">
+
+                    <div class="row justify-content-center">
+
+                        <!----------------------------------
+                                ASUS ROG Strix RX570 gpu
+                        ------------------------------------>
+
+                        <div class="col-4">
+
+
+                            <!--Popup onclick ref-->
+                            <a href="#popup1">
+                                <img src="Images/ASUS ROG Strix RX570.jpg" alt="ASUS ROG Strix"
+                                    class="img-fluid img-thumbnail p-3 rounded shadow p-3 mb-3 bg-Gainsboro rounded"
+                                    id="asus_rogStrix_rx570_img">
+                            </a>
+
+                            <br>
+
+                            <div class='gpu'>
+
+
+                                <!--GPU itemlist-->
+
+                                <p class='gpu-p'><b>ASUS ROG Strix RX570 OC Edition 4GB GDDR5 with ASUS Aura Sync
+                                        Graphics
+                                        Cards</b></p>
+
+                                <br>
+
+
+                                <!--Price-->
+
+                                <p>R2 000</p>
+
+
+                                <!--Add to Cart button-->
+                                <button type="button" class="addCart"
+                                    onclick="asgnProduct(this); incrementClick();"
+                                    id="AsusRog Strix RX570" data-bs-toggle="modal"
+                                    data-bs-target="#ASUS_ROGStrix_RX570_Modal">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cart" viewBox="0 0 16 16">
+
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>&nbsp;Add to cart
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- Modal content when added to cart -->
+
+                            <div class="modal fade bd-example-modal-sm" id="ASUS_ROGStrix_RX570_Modal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-sm">
+
+
+                                    <!-- Modal content -->
+
+                                    <div class="modal-content">
+
+
+                                        <!-- Modal body -->
+
+                                        <div class="modal-body">
+
+                                            <p id="ASUSModal" style="color: black; font-size: 18px;">ASUS ROG Strix RX570 added to
+                                                your cart</p>
+
+                                        </div>
+
+
+                                        <!-- Modal footer -->
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-bs-dismiss="modal"
+                                                style="display: block;">Close</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                    crossorigin="anonymous"></script>
+
+                            </div>
+
+
+                            <!-- Popup overlay contents -->
+
+                            <div id="popup1" class="overlay">
+
+                                <div class="popup">
+
+                                    <h2>Specifications</h2>
+
+                                    <a class="close" href="#asus_rogStrix_rx570_img">&times;</a>
+
+                                    <br>
+
+                                    <div class="content">
+
+                                        <ul>
+                                            <li>1310 MHz engine clock in OC mode for outstanding performance and
+                                                gaming
+                                                experience</li>
+                                            <li>DirectCU II with Patented Wing-Blade 0dB Fan Design</li>
+                                            <li>IP5X-Certified Fans</li>
+                                            <li>ASUS FanConnect II</li>
+                                            <li>Industry-Only Auto-Extreme Technology with Super Alloy Power II
+                                            </li>
+                                            <li>Aura RGB Lighting</li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!----------------------------------
+                            Gigabyte GeForce GTX 1650 gpu
+                        ------------------------------------>
+
+                        <div class="col-4">
+
+                            <!--Popup onclick ref-->
+                            <a href="#popup2">
+
+                                <img src="Images/Gigabyte GeForce GTX 1650.png" alt="Gigabyte GeForce GTX 1650"
+                                    class="img-fluid img-thumbnail p-3 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                    id="gigabyte_geforce_gtx1650_img">
+
+                            </a>
+
+                            <br>
+
+                            <div class='gpu' id='Gigabyte GeForce GTX1650'>
+
+
+                                <!--GPU item list-->
+
+                                <p><b>Gigabyte GeForce GTX 1650 SUPER WINDFORCE OC 4G GDDR6 Graphics
+                                        Card</b></p>
+
+                                <br>
+
+
+                                <!--Price-->
+
+                                <p>R3 500</p>
+
+
+                                <!--Add to cart button-->
+
+                                <button type="button" class="addCart" onclick="asgnProduct(this); incrementClick()"
+                                    id="Gigabyte GeForce GTX1650" data-bs-toggle="modal"
+                                    data-bs-target="#gigabyte_geForce_GTX1650_Modal">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cart" viewBox="0 0 16 16">
+
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>&nbsp;Add to cart
+                                </button>
+
+                            </div>
+
+
+
+                            <br>
+
+                            <!-- Modal content when added to cart -->
+
+                            <div class="modal fade bd-example-modal-sm" id="gigabyte_geForce_GTX1650_Modal"
+                                tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-sm">
+
+
+                                    <!-- Modal content -->
+
+                                    <div class="modal-content">
+
+
+                                        <!-- Modal body -->
+
+                                        <div class="modal-body">
+                                            <p style="color: black; font-size: 18px;">Gigabyte GeForce GTX 1650 added to
+                                                your cart</p>
+                                        </div>
+
+
+                                        <!-- Modal footer -->
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-bs-dismiss="modal"
+                                                style="display: block;">Close</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                    crossorigin="anonymous"></script>
+
+                            </div>
+
+
+                            <!-- Popup overlay contents -->
+
+                            <div id="popup2" class="overlay">
+
+                                <div class="popup">
+
+                                    <h2>Specifications</h2>
+
+                                    <a class="close" href="#gigabyte_geforece_gtx1650_img">&times;</a>
+
+                                    <br>
+
+                                    <div class="content">
+
+                                        <ul>
+                                            <li>Powered by GeForce® GTX 1650 SUPER™</li>
+                                            <li>Integrated with 4GB GDDR6 128-bit memory interface.</li>
+                                            <li>WINDFORCE 2X Cooling System with alternate spinning fans.</li>
+                                            <li>90 mm unique blade fans</li>
+                                            <li>Protection Back Plate</li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!----------------------------------
+                            Palit GeForce RTX 3060 gpu
+                        ------------------------------------>
+
+                        <div class="col-4">
+
+                            <!--Popup onclick ref-->
+                            <a href="#popup3">
+
+                                <img src="Images/Palit GeForce RTX 3060.jpg" alt="Palit GeForce RTX 3060"
+                                    class="img-fluid img-thumbnail p-3 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                    id="palit_geForce_RTX3060_img">
+
+                            </a>
+
+                            <br>
+
+                            <div class='gpu'>
+
+                                <!--GPU item list-->
+                                <p><b>Palit GeForce RTX 3060 StormX 12GB GDDR6 Graphics Card</b></p>
+
+                                <br>
+
+                                <br>
+                                <!--Price-->
+                                <p>R2 500</p>
+
+
+                                <!--Add to Cart button-->
+                                <button class="addCart" onclick="asgnProduct(this); incrementClick()"
+                                    id="Palit GeForce RTX3060" data-bs-toggle="modal"
+                                    data-bs-target="#palit_GeForce_RTX3060_Modal">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cart" viewBox="0 0 16 16">
+
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>&nbsp;Add to cart
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- Modal content when added to cart -->
+
+                            <div class="modal fade bd-example-modal-sm" id="palit_GeForce_RTX3060_Modal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-sm">
+
+
+                                    <!-- Modal content -->
+
+                                    <div class="modal-content">
+
+
+                                        <!-- Modal body -->
+
+                                        <div class="modal-body">
+                                            <p style="color: black; font-size: 18px;">Palit GeForce RTX 3060 added to
+                                                your cart</p>
+                                        </div>
+
+
+                                        <!-- Modal footer -->
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-bs-dismiss="modal"
+                                                style="display: block;">Close</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                    crossorigin="anonymous"></script>
+
+                            </div>
+
+
+                            <!-- Popup overlay contents -->
+
+                            <div id="popup3" class="overlay">
+
+                                <div class="popup">
+
+                                    <h2>Specifications</h2>
+
+                                    <a class="close" href="#palit_geForce_RTX3060_img">&times;</a>
+
+                                    <br>
+
+                                    <div class="content">
+
+                                        <ul>
+                                            <li>RGB Lighting</li>
+                                            <li>0-dB TECH</li>
+                                            <li>DrMOS</li>
+                                            <li>AI-POWERED PERFORMANCE BOOST</li>
+                                            <li>NVIDIA G-SYNC®</li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+
+
+        <!----------------------------------
+            Motherboard Catalogue contents
+        ------------------------------------>
+
+        <div class="card">
+
+            <div class="card-body">
+
+
+                <!--Motherboard Heading contents-->
+
+                <div class="subHeadings">
+
+                    <br>
+
+                    <div class="card">
+
+                        <div class="card-body" id="motherboard">
+
+                            <div class="row justify-content-md-center">
+
+                                <div class="col-md-6 offset-1">
+
+                                    <h4>Motherboard</h4>
+
+                                </div>
+
+                                <div class="col-md-3 offset-md-2">
+
+                                    <a href="3 - Shopping Cart.html" class="viewCart"><b>View Cart</b></a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+
+                <!----------------------------
+                    ASUS ROG MAXIMUS MTB
+                ------------------------------>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-4">
+
+                        <a href="#popup4">
+
+                            <img src="Images/ASUS ROG MAXIMUS XII EXTREME.jpg" alt="ASUS ROG MAXIMUS XII EXTREME"
+                                class="img-fluid img-thumbnail p-3 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                id="ASUS_ROG_img">
+
+                        </a>
+
+                        <br>
+
+                        <div class='mtb'>
+
+                            <!--MTB itemlist-->
+                            <p><b>ASUS ROG MAXIMUS XII EXTREME</b></p>
+
+                            <br>
+
+                            <br>
+                            <!--Price-->
+                            <p>R1 500</p>
+
+
+                            <!--Add to Cart button-->
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()"
+                                id="Asus ROG Maximus XII" data-bs-toggle="modal"
+                                data-bs-target="#ASUS_ROG_MAXIMUS_Modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- Modal content when added to cart -->
+
+                        <div class="modal fade bd-example-modal-sm" id="ASUS_ROG_MAXIMUS_Modal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-sm">
+
+
+                                <!-- Modal content -->
+
+                                <div class="modal-content">
+
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <p style="color: black; font-size: 18px;">ASUS ROG MAXIMUS XII added to
+                                            your cart</p>
+                                    </div>
+
+
+                                    <!-- Modal footer -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal"
+                                            style="display: block;">Close</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                crossorigin="anonymous"></script>
+
+                        </div>
+
+
+                        <!-- Popup overlay contents -->
+
+                        <div id="popup4" class="overlay">
+
+                            <div class="popup">
+
+                                <h2>Specifications</h2>
+
+                                <a class="close" href="#ASUS_ROG_img">&times;</a>
+
+                                <br>
+
+                                <div class="content">
+
+                                    <ul>
+                                        <li>Chipset - Intel® Z490</li>
+                                        <li>Memory - 4 x DIMM, Max. 128GB, DDR4</li>
+                                        <li>1 x PCIe 3.0 x4</li>
+                                        <li>2 x PCIe 3.0 x16 (x16 or dual x8)</li>
+                                        <li>Bluetooth v5.1</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!----------------------------
+                        Gigabyte W480 Vision MTB
+                    ------------------------------>
+
+                    <div class="col-4">
+
+                        <a href="#popup5">
+
+                            <img src="Images/Gigabyte W480 Motherboard.jpg" alt="Gigabyte W480 Vision"
+                                class="img-fluid img-thumbnail p-3 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                id="gigabyte_W480_img">
+                        </a>
+
+                        <br>
+
+                        <div class='mtb'>
+
+                            <!--MTB itemlist-->
+                            <p><b>Gigabyte W480 Vision W All in One LGA1200 Motherboard</b></p>
+
+
+                            <br>
+
+
+                            <!--Price-->
+                            <p>R2 500</p>
+
+
+                            <!--Add to Cart button-->
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()"
+                                id="Gigabyte W480 Vision" data-bs-toggle="modal" data-bs-target="#gigabyte_W480_Modal">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Modal content when added to cart -->
+
+                        <div class="modal fade bd-example-modal-sm" id="gigabyte_W480_Modal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-sm">
+
+
+                                <!-- Modal content -->
+
+                                <div class="modal-content">
+
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <p style="color: black; font-size: 18px;">Gigabyte W480 Vision added to
+                                            your cart</p>
+                                    </div>
+
+
+                                    <!-- Modal footer -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal"
+                                            style="display: block;">Close</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                crossorigin="anonymous"></script>
+
+                        </div>
+
+
+                        <!-- Popup overlay contents -->
+
+                        <div id="popup5" class="overlay">
+
+                            <div class="popup">
+
+                                <h2>Specifications</h2>
+
+                                <a class="close" href="#gigabyte_W480_img">&times;</a>
+
+                                <div class="content">
+
+                                    <ul>
+                                        <li>Intel® Xeon® processor</li>
+                                        <li>Multi-Card Support</li>
+                                        <li>Nividia Quadro Professional Graphics Supports</li>
+                                        <li>Intel® vPro technology</li>
+                                        <li>USB 3.2 Gen 2</li>
+                                        <li>Fin-Array heatsink and heat-pipe</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!---------------------
+                        MSI MPG X570 MTB
+                    ----------------------->
+
+                    <div class="col-4">
+
+                        <a href="#popup6">
+
+                            <img src="Images/MSI MPG X570 GAMING PLUS.png" alt="MSI MPG X570 GAMING PLUS"
+                                class="img-fluid img-thumbnail p-3 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                id="msi_mpg_img">
+
+                        </a>
+
+                        <br>
+
+                        <div class='mtb'>
+
+                            <!--MTB itemlist-->
+                            <p><b>MSI MPG X570 GAMING PLUS</b></p>
+
+                            <br>
+
+                            <br>
+                            <!--Price-->
+                            <p>R3 000</p>
+
+
+                            <!--Add to Cart button-->
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()" id="MSI MPG X570"
+                                data-bs-toggle="modal" data-bs-target="#msi_mpg_X570_Modal">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart
+
+                            </button>
+
+                        </div>
+
+                        <!-- Modal content when added to cart -->
+
+                        <div class="modal fade bd-example-modal-sm" id="msi_mpg_X570_Modal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-sm">
+
+
+                                <!-- Modal content -->
+
+                                <div class="modal-content">
+
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <p style="color: black; font-size: 18px;">msi MPG X570 added to
+                                            your cart</p>
+                                    </div>
+
+
+                                    <!-- Modal footer -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal"
+                                            style="display: block;">Close</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                crossorigin="anonymous"></script>
+
+                        </div>
+
+
+                        <!-- Popup overlay contents -->
+
+                        <div id="popup6" class="overlay">
+
+                            <div class="popup">
+
+                                <h2>Specifications</h2>
+
+                                <a href="#msi_mpg_img" class="close">&times;</a>
+
+                                <div class="content">
+
+                                    <ul>
+                                        <li>Supports AMD Ryzen™</li>
+                                        <li>Supports DDR4 Memory, up to 4400+(OC) MHz</li>
+                                        <li>PCIe 4.0, Lightning Gen4 x4 M.2 with M.2 Shield Frozr accessory</li>
+                                        <li>Frozr Heatsink Design</li>
+                                        <li>Set Core Power Free</li>
+                                        <li>Audio Boost 4</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+        <!-----------------------------
+            CPU / Processors Contents
+        ------------------------------>
+
+
+        <div class="card">
+
+            <div class="card-body">
+
+                <!--CPU / Processors Header contents-->
+
+                <div class="subHeadings">
+
+                    <br>
+
+                    <div class="card">
+
+                        <div class="card-body" id="CPU">
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-6 offset-1">
+
+                                    <h4>CPU / Processors</h4>
+
+                                </div>
+
+                                <div class="col-md-3 offset-md-2">
+                                    <a href="3 - Shopping Cart.html" class="viewCart"><b>View Cart</b></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                </div>
+
+                <!-----------------------------
+                    Intel Core i5 CPU Contents
+                ------------------------------->
+
+                <div class="row justify-content-center">
+
+                    <div class="col-4">
+
+                        <a href="#popup7">
+
+                            <img src="Images/Intel Core i5 9600K CPU.jpg" alt="Intel Core i5 9600K CPU"
+                                class="img-fluid img-thumbnail p-5 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                id='intel_corei5_img'>
+                        </a>
+
+                        <br>
+
+                        <div class='cpu'>
+
+                            <!--CPU itemlist-->
+                            <p><b>Intel Core i5 9600K (6 Cores, 6 Threads, 9MB Cache, Up to 4.6GHz) CPU</b></p>
+
+
+                            <br>
+                            <!--Price-->
+                            <p>R1 500</p>
+
+
+                            <!--Add to Cart button-->
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()" data-bs-toggle="modal"
+                                data-bs-target="#Intel_corei5_Modal" id="Intel Core i5 9600K"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart</button>
+
+                        </div>
+
+
+                        <!-- Modal content when added to cart -->
+
+                        <div class="modal fade bd-example-modal-sm" id="Intel_corei5_Modal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-sm">
+
+
+                                <!-- Modal content -->
+
+                                <div class="modal-content">
+
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <p style="color: black; font-size: 18px;">Intel Core i5 9600K cpu added to
+                                            your cart</p>
+                                    </div>
+
+
+                                    <!-- Modal footer -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal"
+                                            style="display: block;">Close</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                crossorigin="anonymous"></script>
+
+                        </div>
+
+
+                        <!-- Popup overlay contents -->
+
+                        <div id="popup7" class="overlay">
+
+                            <div class="popup">
+
+                                <h2>Specifications</h2>
+
+                                <a href="#intel_corei5_img" class="close">&times;</a>
+
+                                <div class="content">
+
+                                    <ul>
+                                        <li>9th Generation Intel® Core™ i5 Processors</li>
+                                        <li># of Cores 6</li>
+                                        <li># of Threads 6</li>
+                                        <li>Processor Base Frequency 3.70 GHz</li>
+                                        <li>Max Turbo Frequency 4.60 GHz</li>
+                                        <li>Cache 9 MB Intel® Smart Cache</li>
+                                        <li>Memory Types DDR4-2666</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!--------------------------
+                        AMD Ryzen CPU Contents
+                    --------------------------->
+
+                    <div class="col-4">
+
+                        <a href="#popup8">
+                            <img src="Images/amd-ryzen-5-5600x.jpg" alt="AMD Ryzen 5 5600X CPU"
+                                class="img-fluid img-thumbnail shadow p-3 mb-3 bg-Gainsboro rounded" id="amd_ryzen_img">
+                        </a>
+
+                        <br>
+
+                        <div class='cpu'>
+
+                            <!--CPU itemlist-->
+                            <p><b>AMD Ryzen 5 5600X (6 Cores, 12 Threads, 35MB Cache, Up to 4.6GHz) CPU</b></p>
+
+                            <br>
+                            <!--Price-->
+                            <p>R2 500</p>
+
+                            <!--Add to Cart button-->
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()" data-bs-toggle="modal"
+                                data-bs-target="#AMD_ryzen5_Modal" id="AMD Ryzen 5 5600X"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart</button>
+
+                        </div>
+
+                        <!-- Modal content when added to cart -->
+
+                        <div class="modal fade bd-example-modal-sm" id="AMD_ryzen5_Modal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-sm">
+
+
+                                <!-- Modal content -->
+
+                                <div class="modal-content">
+
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <p style="color: black; font-size: 18px;">AMD Ryzen 5 5600X added to
+                                            your cart</p>
+                                    </div>
+
+
+                                    <!-- Modal footer -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal"
+                                            style="display: block;">Close</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                crossorigin="anonymous"></script>
+
+                        </div>
+
+
+                        <!--Popup overlay sepcs-->
+
+                        <div id="popup8" class="overlay">
+
+                            <div class="popup">
+
+                                <h2>Specifications</h2>
+
+                                <a href="#amd_ryzen_img" class="close">&times;</a>
+
+                                <div class="content">
+
+                                    <ul>
+                                        <li># of CPU Cores 6</li>
+                                        <li>Max Boost Clock Up to 4.6GHz</li>
+                                        <li># of Threads 12</li>
+                                        <li>PCI Express® Version PCIe 4.0</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-----------------------------
+                        Intel Core i7 CPU Contents
+                    ------------------------------->
+
+                    <div class="col-4">
+
+                        <a href="#popup9">
+                            <img src="Images/intel-10th-gen-nonk-i7.jpg" alt="Intel Core i7 10700F CPU"
+                                class="img-fluid img-thumbnail p-5 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                id="intel_core_i7_img">
+                        </a>
+
+                        <br>
+
+                        <div class='cpu'>
+
+                            <!--CPU itemlist-->
+
+                            <p><b>Intel Core i7 10700F (8 Cores, 16 Threads, 16MB Cache, Up to 4.8GHz) CPU</b></p>
+
+                            <br>
+
+                            <!--Price-->
+
+                            <p>R2 000</p>
+
+                            <!--Add to Cart button-->
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()" data-bs-toggle="modal"
+                                data-bs-target="#Intel_Core_i7_Modal" id="Intel Core i7 10700F">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Modal content when added to cart -->
+
+                        <div class="modal fade bd-example-modal-sm" id="Intel_Core_i7_Modal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-sm">
+
+
+                                <!-- Modal content -->
+
+                                <div class="modal-content">
+
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <p style="color: black; font-size: 18px;">Intel Core i7 10700F added to
+                                            your cart</p>
+                                    </div>
+
+
+                                    <!-- Modal footer -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal"
+                                            style="display: block;">Close</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                crossorigin="anonymous"></script>
+
+                        </div>
+
+                        <!--Popup overlay sepcs-->
+
+                        <div id="popup9" class="overlay">
+
+                            <div class="popup">
+
+                                <h2>Specifications</h2>
+
+                                <a href="#intel_core_i7_img" class="close">&times;</a>
+
+                                <div class="content">
+
+                                    <ul>
+                                        <li># of Cores 8</li>
+                                        <li># of Threads 16</li>
+                                        <li>Max Turbo Frequency 4.80 GHz</li>
+                                        <li>Memory Types DDR4-2933</li>
+                                        <li>PCI Express Configurations Up to 1x16, 2x8, 1x8+2x4</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+
+        <!--------------------------
+            RAM Catalogue Contents
+        --------------------------->
+
+        <div class="card">
+
+            <div class="card-body">
+
+
+                <!-- RAM Header contents -->
+
+                <div class="subHeadings">
+
+                    <br>
+
+                    <div class="card">
+
+                        <div class="card-body" id="RAM">
+
+                            <div class="row justify-content-md-center">
+
+                                <div class="col-md-6 offset-1">
+
+                                    <h4>RAM</h4>
+
+                                </div>
+
+                                <div class="col-md-3 offset-md-2">
+                                    <a href="3 - Shopping Cart.html" class="viewCart"><b>View Cart</b></a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--------------------------------------------
+                   Corsair Vengeance LPX 4GB 2400MHz Memory
+                ---------------------------------------------->
+
+                <!-- RAM catalogue items -->
+
+                <div class="row justify-content-center">
+
+                    <div class="col-4">
+
+                        <a href="#popup10">
+
+                            <img src="Images/Corsair Vengeance LPX 4GB 2400MHz.webp"
+                                alt="Corsair Vengeance LPX 4GB 2400MHz"
+                                class="img-fluid img-thumbnail p-1 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                id='corsair_ram_img'>
+
+                        </a>
+
+                        <br>
+
+                        <div class='ram'>
+
+                            <!--RAM itemlist-->
+
+                            <p><b>Corsair Vengeance LPX 4GB 2400MHz</b></p>
+
+                            <br>
+
+
+                            <!--Price-->
+
+                            <p>R450</p>
+
+
+                            <!--Add to Cart button-->
+
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()" data-bs-toggle="modal"
+                                data-bs-target="#Corsair_Vengeance_Modal" id="Corsair Vengeance 4GB">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Modal content when added to cart -->
+
+                        <div class="modal fade bd-example-modal-sm" id="Corsair_Vengeance_Modal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-sm">
+
+
+                                <!-- Modal content -->
+
+                                <div class="modal-content">
+
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <p style="color: black; font-size: 18px;">Corsair Vengeance LPX added to
+                                            your cart</p>
+                                    </div>
+
+
+                                    <!-- Modal footer -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal"
+                                            style="display: block;">Close</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                crossorigin="anonymous"></script>
+
+                        </div>
+
+
+                        <!--Popup overlay sepcs-->
+
+                        <div id="popup10" class="overlay">
+
+                            <div class="popup">
+
+                                <h2>Specifications</h2>
+
+                                <a href="#corsair_ram_img" class="close">&times;</a>
+
+                                <div class="content">
+
+                                    <ul>
+                                        <li>Aluminum Heat Spreader</li>
+                                        <li>Low-Profile Design</li>
+                                        <li>XMP 2.0 Support</li>
+                                        <li>Compatibility Tested</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!--------------------------------
+                        HyperX Gaming RAM RGB Memory
+                    --------------------------------->
+
+                    <div class="col-4">
+
+                        <a href="#popup11">
+
+                            <img src="Images/HyperX Gaming RAM RGB Memory - 8GB DDR4-2666MHz.jpg"
+                                alt="HyperX Gaming RAM RGB Memory - 8GB DDR4-2666MHz"
+                                class="img-fluid img-thumbnail p-1 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                id="hyperx_ram_img">
+
+                        </a>
+
+                        <br>
+
+                        <div class='ram'>
+
+                            <!--CPU itemlist-->
+
+                            <p><b>HyperX Gaming RAM RGB Memory - 8GB DDR4-2666MHz</b></p>
+
+                            <br>
+
+
+                            <!--Price-->
+
+                            <p>R650</p>
+
+
+                            <!--Add to Cart button-->
+
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()" data-bs-toggle="modal"
+                                data-bs-target="#HyperX_Gaming_Modal" id="HyperX Gaming 8GB DDR4">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart
+
+                            </button>
+
+                        </div>
+
+                        <!-- Modal content when added to cart -->
+
+                        <div class="modal fade bd-example-modal-sm" id="HyperX_Gaming_Modal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-sm">
+
+
+                                <!-- Modal content -->
+
+                                <div class="modal-content">
+
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <p style="color: black; font-size: 18px;">HyperX Gaming RAM RGB Memory added to
+                                            your cart</p>
+                                    </div>
+
+
+                                    <!-- Modal footer -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal"
+                                            style="display: block;">Close</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                crossorigin="anonymous"></script>
+
+                        </div>
+
+
+                        <!-- Popup overlay of Specs -->
+
+                        <div id="popup11" class="overlay">
+
+                            <div class="popup">
+
+                                <h2>Specifications</h2>
+
+                                <a href="#hyperx_ram_img" class="close">&times;</a>
+
+                                <div class="content">
+
+                                    <ul>
+                                        <li>Stunning RGB lighting with aggressive style</li>
+                                        <li>Patented HyperX Infrared Sync Technology</li>
+                                        <li>Intel XMP-ready</li>
+                                        <li>Ready for AMD Ryzen</li>
+                                        <li>Speeds up to 3733MHz and kit capacities up to 128GB</li>
+                                        <li>Plug N Play functionality at 2400MHz and 2666MHz2</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-------------------------------
+                        CRUCIAL BALLISTIX DDR4 RAM
+                    -------------------------------->
+
+                    <div class="col-4">
+
+                        <a href="#popup12">
+                            <img src="Images/Crucial Ballistix DDR4 SDRAM Memory Ki.jpg"
+                                alt="Crucial Ballistix DDR4 SDRAM Memory Kit"
+                                class="img-fluid img-thumbnail p-3 shadow p-3 mb-3 bg-Gainsboro rounded"
+                                id="crucial_ram_img">
+                        </a>
+
+                        <br>
+
+                        <div class='ram'>
+
+
+                            <!-- CPU itemlist -->
+
+                            <p><b>Crucial Ballistix DDR4 SDRAM Memory</b></p>
+
+                            <br>
+
+
+                            <!-- Price -->
+
+                            <p>R550</p>
+
+
+                            <!-- Add to Cart button -->
+
+                            <button class="addCart" onclick="asgnProduct(this); incrementClick()" data-bs-toggle="modal"
+                                data-bs-target="#Crucial_Ballistix_Modal" id="Crucial Ballistix DDR4">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>&nbsp;Add to cart
+
+                            </button>
+
+
+                            <!-- Modal content when added to cart -->
+
+                            <div class="modal fade bd-example-modal-sm" id="Crucial_Ballistix_Modal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-sm">
+
+
+                                    <!-- Modal content -->
+
+                                    <div class="modal-content">
+
+
+                                        <!-- Modal body -->
+
+                                        <div class="modal-body">
+                                            <p style="color: black; font-size: 18px;">Crucial Ballistix DDR4 added to
+                                                your cart</p>
+                                        </div>
+
+
+                                        <!-- Modal footer -->
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-bs-dismiss="modal"
+                                                style="display: block;">Close</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                                    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                                    crossorigin="anonymous"></script>
+
+                            </div>
+
+
+                            <!-- Popup overlay of Specs -->
+
+                            <div id="popup12" class="overlay">
+
+                                <div class="popup">
+
+                                    <h2>Specifications</h2>
+
+                                    <a href="#crucial_ram_img" class="close">&times;</a>
+
+                                    <div class="content">
+
+                                        <ul>
+                                            <li>Modern Design</li>
+                                            <li>Bold RGB Effects</li>
+                                            <li>Aluminum heat spreader</li>
+                                            <li>XMP 2.0 support</li>
+                                            <li>AMD and Intel Ready</li>
+                                            <li>DDR4-3200</li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+
+        <!---------------------------
+            Supplier Table Contents
+        ----------------------------->
+
+        <h4 class="lead">Trusted Suppliers</h4>
+
+        <br>
+
+        <h4 class="suppTable">Supplier Table</h4>
+
+        <br>
+
+
+        <!--Supplier Table Info Contents-->
+
+        <table class="table table-bordered table-hover table-rounded">
+
+
+            <!--Table Headers-->
+
+            <thead>
+
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Contact Details</th>
+                    <th scope="col">Component Frequently Bought</th>
+                </tr>
+
+            </thead>
+
+
+            <!--Table Data-->
+
+            <tbody>
+
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mustek</td>
+                    <td>021 413 3000</td>
+                    <td>RAM</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Syntec</td>
+                    <td>021 514 5300</td>
+                    <td>RAM / Processors</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Pinnacle</td>
+                    <td>021 550 0100</td>
+                    <td>Graphics Cards / Motherboards</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <br>
+
+        <br>
+
+
+        <!--------------------------
+            Fixed Footer Contents
+        ---------------------------->
+
+        <div class="fixed-bottom">
+
+
+            <!--Back to Top Button-->
+
+            <button class="btn">
+
+                <a href="#mainNav" style="color: white;">Back to Top</a>
+
+            </button>
+
+
+            <!--Shopping Cart Button-->
+
+            <button class="btn">
+
+                <a href="3 - Shopping Cart.html" style="color: white;">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="cartBtn"
+                        viewBox="0 0 16 16">
+
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>View Cart</a>
+
+                &nbsp;
+                <span class='cart-counter' id='cart-counter'>0</span>
+
+            </button>
+
+        </div>
+
+    </body>
+
+    </html>
+
+</DOCTYPE>

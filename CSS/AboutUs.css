@@ -1,0 +1,62 @@
+/*Body Style*/
+body{
+    width: auto;
+    height:auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+/* Lead Heading Style */
+.lead{
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    padding: 1em;
+
+    display: block;
+    border: 1px white solid;
+}
+
+/* Text style */
+p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Navigation Link Style*/
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: Tahomo, sans-serif;
+
+    margin: 1em;
+}
+
+/* Button Style */
+.btn{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Background Color Style and Specs */
+.colormove{
+    background: linear-gradient(-45deg, #000000, #6b2b43, #214b5a, #21836c);
+    background-size: 400% 400%;
+    animation: colormove 15s ease infinite;
+}
+
+/* Background color Animation Style */
+@keyframes colormove{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

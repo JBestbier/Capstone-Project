@@ -1,0 +1,108 @@
+/* Body specs */
+body {
+    width: auto;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+/* Background color style */
+.colormove {
+    background: linear-gradient(-45deg, #000000, #6b2b43, #214b5a, #21836c);
+    background-size: 400% 400%;
+    animation: colormove 15s ease infinite;
+}
+
+/* Animation Background color style */
+@keyframes colormove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Navigation Menu Margin*/
+.nav>li {
+    margin: 1em;
+}
+
+/* Navigation Links style */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: Tahomo, sans-serif;
+}
+
+/*Main Header Styling*/
+#mainHead {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    padding: 1em;
+
+    display: block;
+    border: 1px white solid;
+}
+
+h5 {
+    color: white;
+}
+
+/* Links Style */
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Tahomo, sans-serif;
+    text-align: center;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+/*Paragraph Style*/
+p {
+    color: white;
+    text-decoration: none;
+    font-family: tahomo, sans-serif;
+    text-align: left;
+}
+
+.rounded {
+    border-radius: 1rem
+}
+
+.nav-pills .nav-link {
+    color: #555
+}
+
+.creditCard {
+    color: black
+    
+}
+
+input[type="radio"] {
+    margin-right: 5px
+}
+
+.bold {
+    font-weight: bold
+}
+
+/*card styling*/
+.card {
+    background-color: transparent;
+}
+
+.card-header{
+    background: transparent;
+    color: white;
+}

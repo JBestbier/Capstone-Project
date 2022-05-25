@@ -1,0 +1,347 @@
+/* 
+
+    *********
+     CSS API
+    *********
+
+    =============
+    Body Styling
+    =============
+
+*/
+
+body {
+    width: auto;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+/* Background color style */
+
+.colormove {
+    background: linear-gradient(-45deg, #000000, #6b2b43, #214b5a, #21836c);
+    background-size: 400% 400%;
+    animation: colormove 15s ease infinite;
+}
+
+/* Animation Background color style */
+
+@keyframes colormove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*
+    ===================
+    Navigation Styling
+    ===================
+*/
+
+.nav>li {
+    margin: 1em;
+}
+
+/* Navigation Links style */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: Tahomo, sans-serif;
+}
+
+/*
+    =====================
+        Image Styling
+    =====================
+*/
+.img-fluid {
+    width: 420px;
+    height: 350px;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+
+    transition: transform .2s
+}
+
+/* Image Style on Hover */
+
+.img-fluid:hover {
+    transform: scale(1.3);
+}
+
+
+/*
+    ===========================
+     Container Content styling
+    ===========================
+*/
+
+
+/* text style and specs */
+
+p {
+    color: white;
+    font-size: 19px;
+    font-family: Tahomo, sans-serif;
+}
+
+.container-fluid {
+    text-align: center;
+    font-family: Tahomo, sans-serif;
+}
+
+
+/* Subheadings of catalogue items specs */
+
+.subHeadings {
+    text-align: left;
+    font-family: Tahomo, sans-serif;
+}
+
+
+/* Card styling */
+
+.card-body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Tahomo, sans-serif;
+}
+
+/* Graphics Card layout style */
+#graphicsCard {
+    text-align: left;
+    background-color: black;
+    color: white;
+    font-family: Tahomo, sans-serif;
+}
+
+/* Motherboard layout style */
+#motherboard {
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+/* CPU layout style */
+#CPU {
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+/* RAM Layout style */
+#RAM {
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+/* Form styling */
+.form-group {
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Table styling */
+table {
+    margin: auto;
+    width: 50%;
+    border: 1px solid white;
+
+    text-align: auto;
+    color: white;
+}
+
+/* Supplier table Style and specs */
+.suppTable {
+    text-align: center;
+    color: white;
+}
+
+/*  
+    ===================
+    Lead Headings style
+    =================== 
+*/
+
+.lead {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+/* 
+    =======================
+        Buttons Styling 
+    ======================= 
+*/
+
+.btn {
+    color: white;
+    border: 0.5px solid black;
+    background-color: #6b2b43;
+    text-align: center;
+
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    float: right;
+}
+
+.cartBtn{
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.addCart {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.addCart:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.viewCart {
+    color: white;
+    background: transparent;
+    text-decoration: none;
+
+    border: 0.5px solid whitesmoke;
+    padding: 1em;
+}
+
+/* Button Hover style */
+
+.viewCart:hover {
+    color: cornflowerblue;
+}
+
+
+/* 
+    ================================
+     Pop-over clickon image styling
+    ================================
+*/
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    background-color: gainsboro;
+}
+
+/* Overlay */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Overlay Target */
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Popup Heading Style */
+
+.popup h2 {
+    margin-top: 0;
+    color: black;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: gainsboro;
+}
+
+/* Popup close Style */
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Popup Hover Close button */
+
+.popup .close:hover {
+    color: black;
+}
+
+/* Popup Content style */
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    background-color: gainsboro;
+}
+
+/* Popup function specs */
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
+/* Content Popup style */
+
+.content>ul {
+    color: black;
+    text-align: left;
+}
+
+
+
+/* 
+    ====================
+        Footer styling
+    ====================
+*/
+
+.footer{
+    background-color: white;
+    opacity: 0.5
+}

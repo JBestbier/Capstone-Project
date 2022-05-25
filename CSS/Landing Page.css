@@ -1,0 +1,122 @@
+/* Body Style */
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Background Color Style*/
+.colormove{
+    background: linear-gradient(-45deg, #000000, #6b2b43, #214b5a, #21836c);
+    background-size: 400% 400%;
+    animation: colormove 15s ease infinite;
+}
+
+/*Background Color Animation Style and Specs*/
+@keyframes colormove{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Links Style */
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Tahomo, sans-serif;
+    text-align: center;
+}
+
+/* List Specs */
+.nav > li{
+    margin: 1em;
+}
+
+
+/* Lead Heading Style */
+.lead{
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    padding: 1em;
+
+    display: block;
+    border: 1px white solid;
+}
+
+/* Text Style */
+p{
+    color: white;
+}
+
+/* Data list style */
+dl > dt{
+    font-size: 22px;
+    color: white;
+    font-family: Tahomo, sans-serif
+}
+
+/* Data list content Style */
+dl > dd{
+    color: white;
+    font-size: 16px;
+    font-family: Tahomo, sans-serif
+}
+
+/* Card Title Style */
+.card-title{
+    color: white;
+}
+
+/* Body Style for Card */
+.card-body{
+    background-color: black;
+}
+
+/*Image for Graphics Card Style*/
+#mainPageSecond{
+    justify-self: auto;
+}
+
+/*Image for CPU Style */
+#componentsMain{
+    color: white;
+}
+
+/* Button Style */
+.btn{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.dropdown{
+    background: transparent;
+}
+
+/* Form Style */
+.form-group{
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+/* Form Submit Button Style */
+#submitBtn{
+    background-color: transparent;
+    color: white;
+}
+
+/* Form Radio Style */
+#radio{
+    color: white;
+}
